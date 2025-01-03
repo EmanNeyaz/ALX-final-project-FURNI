@@ -1,0 +1,116 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.wrapper {
+font-family: 'Roboto', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #5d8d7c;
+width: 100%;
+color: #fff;
+padding: 30px 40 px;
+}
+.wrapper h1 {
+font-size: 2.5rem;
+text-align: center;
+}
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    background-color: ;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: transparent;
+    border: 2px solid #333;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    color: green;
+    border-radius: 40px;
+}
+.input-box input::placeholder {
+    color: #333;
+}
+.input-box input {
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+}
+.input-box input:focus {
+    border-color: #135130;
+}
+.input-box input::placeholder {
+    color: #fff;
+}
+.input-box .icon {
+position: absolute;
+top: 50%;
+right: 20px;
+transform: translateY(-50%);
+font-size: 16px;
+}
+.wrapper .forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+.forgot label input {
+    accent-color: #fff;
+    margin-right: 4px;
+}
+.forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+.forgot a:hover {
+    text-decoration: underline;
+}
+.wrapper button {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-weight: 600;
+}
+.wrapper button:hover {
+    background-color: #385D50;
+    color: #fff;
+}
+.wrapper .signup {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.wrapper .signup p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.wrapper .signup p a:hover {
+    text-decoration: underline;
+}
