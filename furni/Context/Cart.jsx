@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
+import './Cart.css';
 
 const Cart = () => {
   const { cart, removeFromCart, getTotalPrice } = useContext(CartContext);
 
   return (
-    <div>
+    <div className='cart container'>
       <h2>Cart</h2>
       <table className='table container'>
         <thead>

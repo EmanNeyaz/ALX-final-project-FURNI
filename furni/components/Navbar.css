@@ -18,6 +18,11 @@
   .navbar li {
     margin: 0 20px;
   }
+  .navbar li:hover {
+    color: #385D50;
+    transform: scale(1.1);
+    border-radius: 5px;
+  }
   
   .navbar a {
     text-decoration: none;
