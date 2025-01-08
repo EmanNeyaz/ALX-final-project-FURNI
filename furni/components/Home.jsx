@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Navbar.css";
+import Footer from './Footer';
 
 function Home() {
   return (
@@ -17,6 +18,8 @@ function Home() {
       <div>
         <img src="\src\assets\couch 1.png" alt="couch" />
       </div>
+      
+      <Footer />
     </div>
   );
 }

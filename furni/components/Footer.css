@@ -1,0 +1,39 @@
+.footer {
+    background-color: #FFFFFF;
+    color: #385D50;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #385D50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.footer-content .footer-links {
+    display: flex;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+}
