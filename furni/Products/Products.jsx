@@ -9,7 +9,7 @@ const Products = () => {
       id: 1,
       name: 'kruxo chair',
       price: 100,
-      image: <img src="/react/src/assets/images/Kruzo.png" alt="kruzo" />,
+      image: <img src="\src\assets\Kruzo.png" alt="kruzo" />,
       count: 1
     },
     {
