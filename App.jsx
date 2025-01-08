@@ -8,6 +8,7 @@ import Cart from './furni/Context/Cart';
 import PropTypes from 'prop-types';
 import Login from './furni/components/login/login';
 import Signup from './furni/components/login/Signup';
+import { CartProvider } from './furni/Context/CartContext';
 
 function ErrorBoundary({ error }) {
   if (!error) {
@@ -57,7 +58,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+  <CartProvider>
+  <RouterProvider router={router} />
+</CartProvider>
+);
 }
 
 export default App;
