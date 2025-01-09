@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FaShoppingCart, FaUser } from "react-icons/fa"; 
+import { CartContext } from "../Context/CartContext";
 
 function Navbar() {
+  const { cart } = useContext(CartContext);
+  const cartItemCount = cart.reduce((count, item) => count + item.quantity, 0);
   return (
     <header className="navbar">
       <h4>FURNI</h4>
@@ -17,14 +20,16 @@ function Navbar() {
         <li>
           <Link to={"/products"}>Products</Link>
         </li>
-        <li>
+        <li className="cart">
           <Link to={"/cart"}>
-            <FaShoppingCart /> Cart
+            <FaShoppingCart />
+            {cartItemCount > 0 && <span className="badge">{cartItemCount}</span>}
+             
           </Link>
         </li>
         <li>
           <Link to={"/login"}>
-            <FaUser /> Login
+            <FaUser /> 
           </Link>
         </li>
       </ul>

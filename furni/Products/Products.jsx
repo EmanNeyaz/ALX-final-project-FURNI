@@ -1,81 +1,39 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
 
+const products = [
+  {
+    id: 1,
+    name: 'kruzo chair',
+    price: 100,
+    image: '/react/src/assets/images/Kruzo Chair.png',
+    count: 1
+  },
+  {
+    id: 2,
+    name: 'Ergonomic Chair',
+    price: 75,
+    image: '/react/src/assets/images/Ergonomic Chair.png',
+    count: 2
+  },
+  {
+    id: 3,
+    name: 'nordic chair',
+    price: 75,
+    image: '/react/src/assets/images/Nordic Chair.png',
+    count: 3
+  },
+  {
+    id: 10,
+    name: 'kitchen',
+    price: 300,
+    image: '/react/src/assets/images/kitchen.jpg',
+    count: 10
+  }
+];
+
 const Products = () => {
   const { addToCart } = useContext(CartContext);
-  const products = [
-    // my  products data here
-    {
-      id: 1,
-      name: 'kruxo chair',
-      price: 100,
-      image: <img src="\src\assets\Kruzo.png" alt="kruzo" />,
-      count: 1
-    },
-    {
-        id: 2,
-        name: 'Ergonomic Chair',
-        price: 75,
-        image: <img src="/react/src/assets/images/Ergonomic.png" alt="Ergonomic" />,
-        count: 2
-    },
-    {
-        id: 3,
-        name: 'nordic chair',
-        price: 75,
-        image: <img src="/react/src/assets/images/Nordic CHAIR.png" alt="Nordic" />,
-        count: 3
-    },
-    {
-        id: 4,
-        name: 'sofa',
-        price: 150,
-        image: <img src="/react/src/assets/images/sofa.png" alt="sofa" />,
-        count: 4
-    },
-    {
-        id: 5,
-        name: 'wood chair',
-        price: 50,
-        image: <img src="/react/src/assets/images/wood chair.png" alt="wood" />,
-        count: 5
-    },
-    {
-        id: 6,
-        name: 'living corner',
-        price: 250,
-        image: <img src="/react/src/assets/images/living corner.jpg" alt="living corner" />,
-        count: 6
-    },
-    {
-        id: 7,
-        name: 'candle',
-        price: 25,
-        image: <img src="/react/src/assets/images/candle.jpg" alt="candle" />,
-        count: 7
-    },
-    {
-        id: 8,
-        name: 'comfe chair',
-        price: 100,
-        image: <img src="/react/src/assets/images/comfe chair.jpg" alt="comfe" />,
-        count: 8
-    },
-    {
-        id: 9,
-        name: 'm couch',
-        price: 200,
-        image: <img src="/react/src/assets/images/modern couch.jpg" alt="m couch" />,
-        count: 9
-    },
-    {
-        id: 10,
-        name: 'kitchen',
-        price: 300,
-        image: <img src="/react/src/assets/images/kitchen.jpg" alt="kitchen" />,
-        count: 10
-    }
-  ];
 
   return (
     <div>
@@ -83,7 +41,7 @@ const Products = () => {
       <div className='products d-flex flex-wrap justify-content-center'>
         {products.map((item) => (
           <div key={item.id} className='card m-2'>
-            <img src={`/images/${item.image}`} alt="" className='card-img' style={{ width: "25rem", height:"25rem" }} />
+            <img src={item.image} alt={item.name} className='card-img' style={{ width: "18rem", height:"18rem" }} />
             <div className='card-body'>
               <h3>{item.name}</h3>
               <span>{item.price} $</span>
