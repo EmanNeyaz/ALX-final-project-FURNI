@@ -6,9 +6,11 @@ import Products from './furni/Products/Products';
 import Navbar from './furni/components/Navbar';
 import Cart from './furni/Context/Cart';
 import PropTypes from 'prop-types';
-import Login from './furni/components/login/login';
+import Login from './furni/components/login/Login';
 import Signup from './furni/components/login/Signup';
 import { CartProvider } from './furni/Context/CartContext';
+import ContactUs from './furni/components/ContactUs/ContactUs';
+import AboutUs from './furni/components/AboutUs/AboutUs';
 
 function ErrorBoundary({ error }) {
   if (!error) {
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
       {
         path: 'Signup',
         element: <Signup />
+      },
+      {
+        path: 'contact',
+        element: <ContactUs />
+      },
+      {
+        path: 'about',
+        element: <AboutUs />
       }
     ]
   }
@@ -59,10 +69,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-  <CartProvider>
-  <RouterProvider router={router} />
-</CartProvider>
-);
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
+  );
 }
 
 export default App;
