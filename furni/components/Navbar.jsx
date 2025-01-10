@@ -15,23 +15,29 @@ function Navbar() {
           <Link to={"/"}>Home</Link>
         </li>
         <li>
-          <Link to={"/"}>About US</Link>
+          <Link to={"/about"}>About US</Link>
+        </li>
+        
+        <li>
+          <Link to={"/contact"}>Contact Us</Link>
         </li>
         <li>
           <Link to={"/products"}>Products</Link>
         </li>
-        <li className="cart">
+        </ul>
+        <ul>
+          <li className="cart">
           <Link to={"/cart"}>
             <FaShoppingCart />
             {cartItemCount > 0 && <span className="badge">{cartItemCount}</span>}
              
           </Link>
-        </li>
-        <li>
+          </li>
+         <li>
           <Link to={"/login"}>
             <FaUser /> 
           </Link>
-        </li>
+         </li>
       </ul>
     </header>
   );

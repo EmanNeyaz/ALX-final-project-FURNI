@@ -19,9 +19,11 @@
     margin: 0 20px;
   }
   .navbar li:hover {
-    color: #385D50;
+    color: yellow;
     transform: scale(1.1);
     border-radius: 5px;
+    
+    
   }
   
   .navbar a {
@@ -34,22 +36,8 @@
     gap: 20px;
   }
   /* ********************************************  */
-  .home {
-    background-color: #385D50;
-    color: #fff;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-  .btn-group {
-    display: flex;
-    gap: 20px;
-  }
-  .btn {
-    border-radius: 50px ;
-  }
+  
+ 
   .badge {
     background-color: red;
     color: white;
