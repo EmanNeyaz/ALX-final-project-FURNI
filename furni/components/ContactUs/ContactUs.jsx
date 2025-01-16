@@ -1,5 +1,6 @@
-import React from 'react';
-import './ContactUs.css';
+import React from 'react'
+import './ContactUs.css'; 
+
 
 function ContactUs() {
   return (
