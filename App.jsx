@@ -11,6 +11,7 @@ import Signup from './furni/components/login/Signup';
 import { CartProvider } from './furni/Context/CartContext';
 import ContactUs from './furni/components/ContactUs/ContactUs';
 import AboutUs from './furni/components/AboutUs/AboutUs';
+import BlogPage from './furni/components/Blog/BlogPage';
 
 function ErrorBoundary({ error }) {
   if (!error) {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <AboutUs />
+      },
+      {
+        path: 'blog',
+        element: <BlogPage />
       }
     ]
   }
