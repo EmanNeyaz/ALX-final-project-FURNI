@@ -1,5 +1,5 @@
-import React from 'react';
-import './ContactUs.css'; // Import the CSS for styling
+import React from 'react'
+import './ContactUs.css'; 
 
 function ContactUs() {
   return (
@@ -11,6 +11,7 @@ function ContactUs() {
           <p>
             Have any questions or want to explore our furniture? Get in touch with us today!
           </p>
+
         </div>
       </section>
 
