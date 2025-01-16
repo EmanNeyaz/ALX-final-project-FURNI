@@ -60,7 +60,7 @@
         justify-content: center;
         gap: 10px;
     }
-    .why-us-item h2 {
+    .why-us-item h3 {
         font-size: 1.5rem;
         color: #385D50;
     }
@@ -71,4 +71,38 @@
     .why-us-item span {
         font-size: 1rem;
         color: #000;
+    }
+    /********* blog section *************/
+    .blogs .line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .blogs .line li{
+      list-style: none;
+      margin: 10px;
+      color: #385D50;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    .blogs h2{
+      font-size: 2.5rem;
+      color: #385D50;
+      margin-bottom: px;
+    }
+    .blog-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .blog-card:hover{
+      transform: scale(1.05);
+    }
+    .blog-card h3 {
+      font-size: 1.5rem;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
     }

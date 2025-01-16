@@ -1,7 +1,6 @@
 import React from 'react'
 import './ContactUs.css'; 
 
-
 function ContactUs() {
   return (
     <div className="contact-us-container">
@@ -12,6 +11,7 @@ function ContactUs() {
           <p>
             Have any questions or want to explore our furniture? Get in touch with us today!
           </p>
+
         </div>
       </section>
 

@@ -24,6 +24,10 @@ function Navbar() {
         <li>
           <Link to={"/products"}>Products</Link>
         </li>
+        <li>
+          <Link to={"/blog"}>Blogs</Link>
+        </li>
+
         </ul>
         <ul>
           <li className="cart">
