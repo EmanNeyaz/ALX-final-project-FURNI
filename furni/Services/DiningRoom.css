@@ -9,6 +9,7 @@
   .dining-room-title {
     font-size: 2.5rem;
     color: #385D50;
+
     margin-bottom: 20px;
   }
   
@@ -52,6 +53,9 @@
   
   .dining-room-button {
     background-color: #385D50;
+  }
+  
+
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -67,4 +71,5 @@
   .dining-room-button:active {
     transform: scale(0.95);
   }
+
   
