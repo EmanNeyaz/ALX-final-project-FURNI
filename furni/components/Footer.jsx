@@ -5,9 +5,18 @@ import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
         <footer className="footer">
+          <div className='footer-newsletter'>
+              <h2>Subscribe to our newsletter</h2>
+               <div className='input-group'>
+                  <input type='email' className='form-control' placeholder='Enter your email' />
+                  <button type='submit' className='btn btn-success'>Subscribe</button>
+               </div>
+          </div>
         <div className="container">
           <div className="row">
             <div className="col-lg-4">
@@ -26,9 +35,9 @@ const Footer = () => {
               <div className="footer-links">
                 <h4>About Us</h4>
                 <ul>
-                  <li><a href="#">Services</a></li>
+                <li>  <Link to={"/products"}>Products</Link></li>
                   
-                  <li><a href="#">About Us</a></li>
+                  <li>  <Link to={"/about"}>About Us</Link></li>
                 </ul>
               </div>
             </div>
@@ -36,8 +45,8 @@ const Footer = () => {
               <div className="footer-links">
                 <h4>Support</h4>
                 <ul>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li>  <Link to={"/blog"}>Blog</Link></li>
+                  <li>  <Link to={"/contact"}>Contact Us</Link></li>
                 </ul>
               </div>
             </div>
@@ -52,7 +61,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright">
-          <p>Copyright 2025 FURNIegypt@gmail.com. All Rights Reserved.</p>
+          
+          <p> 2025 furniegypt@gmail.com. All Rights Reserved.</p>
         </div>
       </footer>
     );
