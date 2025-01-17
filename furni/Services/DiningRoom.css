@@ -1,0 +1,70 @@
+/* General Styling */
+.dining-room-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .dining-room-title {
+    font-size: 2.5rem;
+    color: #385D50;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout */
+  .dining-room-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px; /* Space between items */
+  }
+  
+  /* Dining Room Card */
+  .dining-room-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .dining-room-image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for images */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .dining-room-card h2 {
+    font-size: 1.5rem;
+    color: #385D50;
+    margin-bottom: 10px;
+  }
+  
+  .dining-room-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .dining-room-button {
+    background-color: #385D50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dining-room-button:hover {
+    background-color: #2b5d58;
+  }
+  .dining-room-button:active {
+    transform: scale(0.95);
+  }
+  
