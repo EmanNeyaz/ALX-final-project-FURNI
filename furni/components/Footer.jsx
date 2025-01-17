@@ -14,7 +14,7 @@ const Footer = () => {
               <h2>Subscribe to our newsletter</h2>
                <div className='input-group'>
                   <input type='email' className='form-control' placeholder='Enter your email' />
-                  <button type='submit' className='btn btn-success'>Subscribe</button>
+                  <button type='submit' className='btn sub-btn'>Subscribe</button>
                </div>
           </div>
         <div className="container">
@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="footer-links">
                 <h4>About Us</h4>
                 <ul>
-                <li>  <Link to={"/products"}>Products</Link></li>
+                <li>  <Link to={"/services"}>Services</Link></li>
                   
                   <li>  <Link to={"/about"}>About Us</Link></li>
                 </ul>
