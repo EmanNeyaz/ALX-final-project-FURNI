@@ -55,3 +55,7 @@
 .footer .input-group {
     width: 350px;
 }
+.footer .sub-btn {
+    background-color: #385D50;
+    color: #fff;
+}

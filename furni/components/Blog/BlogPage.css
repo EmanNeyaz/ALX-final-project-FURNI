@@ -23,7 +23,8 @@
   
   /* Individual blog card styling */
   .blog-card {
-    width: 350px; /* Increase the width of the card */
+    flex: 1 1 calc(33.333% - 20px); /* Cards are equally sized in one row */
+    max-width: calc(33.333% - 20px)
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;

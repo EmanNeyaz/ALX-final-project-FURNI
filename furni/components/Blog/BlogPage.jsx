@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./BlogPage.css";
+import blogTrends from "../../../assets/blog-trends.jpg";
+import blogSofa from "../../../assets/blog-sofa.jpg";
+import blogEco from "../../../assets/blog-eco.jpg";
+
 
 
 
@@ -11,7 +15,7 @@ const BlogPage = () => {
       description: "Discover the latest styles and designs making waves this year.",
       fullContent:
         "Furniture trends in 2025 are all about sustainability, modern aesthetics, and multifunctional designs. Explore eco-friendly materials, bold colors, and minimalist styles to enhance your living space.",
-      image: "/react/src/assets/blog-sofa.jpg",
+      image: blogTrends,
       date: "January 6, 2025",
     },
     {
@@ -20,7 +24,7 @@ const BlogPage = () => {
       description: "Tips to help you pick a sofa that fits your style and comfort.",
       fullContent:
         "Choosing the perfect sofa involves considering factors like size, material, color, and functionality. Learn how to measure your space, choose the right fabric, and match your sofa to your decor.",
-      image: "/react/src/assets/blog-sofa.jpg",
+      image: blogSofa,
       date: "December 28, 2024",
     },
     {
@@ -29,7 +33,7 @@ const BlogPage = () => {
       description: "Keep your wooden furniture looking like new with these simple tips.",
       fullContent:
         "Maintaining wooden furniture requires regular dusting, polishing, and protection from moisture. Discover easy steps to preserve the beauty and longevity of your wooden pieces.",
-      image: "/assets/blog-eco.jpg",
+      image: blogEco,
       date: "December 15, 2024",
     },
   ];
