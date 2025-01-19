@@ -85,10 +85,9 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
   }
   
   .submit-btn:hover {
     background-color: #49a19a;
   }
-  
+

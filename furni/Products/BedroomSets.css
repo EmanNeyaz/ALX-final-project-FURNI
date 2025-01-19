@@ -8,8 +8,7 @@
   
   .bedroom-sets-title {
     font-size: 2.5rem;
-    color: #385D50;
-
+    color: #333;
     margin-bottom: 20px;
   }
   
@@ -39,7 +38,7 @@
   
   .bedroom-set-card h2 {
     font-size: 1.5rem;
-    color: #385D50;
+    color: #333;
     margin-bottom: 10px;
   }
   
@@ -47,15 +46,10 @@
     font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
-    width: 100%;
-    height: 40px;
   }
   
   .bedroom-set-button {
-    background-color: #385D50;
-  }
-  
-
+    background-color: #35736E;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -67,9 +61,5 @@
   
   .bedroom-set-button:hover {
     background-color: #2b5d58;
-  }
-
-  .bedroom-set-button:active {
-    transform: scale(0.95);
   }
   

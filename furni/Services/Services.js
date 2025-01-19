@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Products.css'; 
+import './Services.css';
 
-function Products() {
+function Services() {
   const services = [
     {
       id: 1,
@@ -32,7 +32,7 @@ function Products() {
 
   return (
     <div className="services-container">
-      <h1 className="services-title">Our Products</h1> {/* Update "Services" to "Products" */}
+      <h1 className="services-title">Our Services</h1>
       <p className="services-description">
         Explore our range of premium furniture categories tailored to your needs.
       </p>
@@ -55,4 +55,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Services;
