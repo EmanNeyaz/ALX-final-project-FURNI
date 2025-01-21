@@ -1,7 +1,6 @@
 import React from 'react';
-import './AboutUs.css'; // Import the styles
-import './AboutUs.css';
 
+import './AboutUs.css'; // Import the styles
 
 
 function AboutUs() {
@@ -18,9 +17,12 @@ function AboutUs() {
           </p>
         </div>
         <div className="hero-image">
+
           <img src="\src\assets\why-choose-us-img 1.svg" alt="" />
+
         </div>
       </section>
+
       {/* Content Section */}
       <section className="about-content">
         <div className="content-box">
@@ -41,6 +43,7 @@ function AboutUs() {
           </ul>
         </div>
       </section>
+
       {/* Contact Section */}
       <section className="about-contact">
         <h2>Get in Touch</h2>
@@ -53,4 +56,5 @@ function AboutUs() {
     </div>
   );
 }
+
 export default AboutUs;
