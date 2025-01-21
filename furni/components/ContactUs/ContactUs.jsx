@@ -1,7 +1,27 @@
-import React from 'react';
-import './ContactUs.css'; // Import the CSS for styling
+import React from 'react'
+import './ContactUs.css'; 
+
 
 function ContactUs() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Extract form data
+    const formData = {
+      name: e.target[0].value,
+      email: e.target[1].value,
+      message: e.target[2].value,
+    };
+
+    // Save the form data to local storage
+    localStorage.setItem('contactFormData', JSON.stringify(formData));
+
+    // Clear the form fields
+    e.target.reset();
+
+    alert('Your message has been saved locally!');
+  };
+
   return (
     <div className="contact-us-container">
       {/* Hero Section */}
@@ -11,6 +31,7 @@ function ContactUs() {
           <p>
             Have any questions or want to explore our furniture? Get in touch with us today!
           </p>
+
         </div>
       </section>
 
@@ -28,14 +49,14 @@ function ContactUs() {
         </div>
         <div className="details-box">
           <h3>Visit Our Showroom</h3>
-          <p>15 st ahmed mohamed ,naser city , cairo  </p>
+          <p>15 st ahmed mohamed, naser city, cairo</p>
         </div>
       </section>
 
       {/* Contact Form Section */}
       <section className="contact-form">
         <h2>Send Us a Message</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Your Name"

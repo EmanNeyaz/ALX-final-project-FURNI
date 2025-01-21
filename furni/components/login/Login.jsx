@@ -29,7 +29,7 @@ const Login = () => {
   return (
     <div className={`wrapper${action}`}>
       
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className='form'>
           <h1>Login</h1>
           <div className="input-box">
               <input type="text"  placeholder="Username" required value={username} onChange={(e) => setUsername(e.target.value)} />

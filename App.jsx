@@ -2,7 +2,6 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './furni/components/Layout';
 import Home from './furni/components/Home';
-import Products from './furni/Products/Products';
 import Navbar from './furni/components/Navbar';
 import Cart from './furni/Context/Cart';
 import PropTypes, { element } from 'prop-types';
@@ -17,7 +16,7 @@ import BedroomSets from './furni/Services/BedroomSets';
 import LivingRoom from './furni/Services/LivingRoom';
 import DiningRoom from './furni/Services/DiningRoom';
 import Payment from './furni/components/Payment/Payment';
-
+import Testimonials from './furni/components/Testimonials/Testimonials';
 function ErrorBoundary({ error }) {
   if (!error) {
     return null;
@@ -89,6 +88,10 @@ const router = createBrowserRouter([
       {
         path: 'payment',
         element: <Payment />
+      },
+      {
+        path: 'testimonials',
+        element: <Testimonials />
       }
 
     ]

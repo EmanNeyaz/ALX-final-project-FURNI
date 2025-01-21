@@ -34,7 +34,7 @@ function Services() {
   ];
 
   return (
-    <div className="services-container container"> ">
+    <div className="services-container container"> 
       <h1 className="services-title">Our Services</h1>
       <p className="services-description">
         Explore our range of premium furniture categories tailored to your needs.

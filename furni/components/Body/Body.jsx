@@ -1,28 +1,20 @@
 import React from 'react';
 import "./Body.css";
-import { useNavigate } from 'react-router-dom';
 import { LiaShippingFastSolid } from "react-icons/lia";
 import { TiShoppingBag } from "react-icons/ti";
 import { BiSupport } from "react-icons/bi";
 import { TbTruckReturn } from "react-icons/tb";
-import { Link } from 'react-router-dom';
+
 
 const Home = () => {
-  const navigate = useNavigate();
 
-  const handleShopNowClick = () => {
-    navigate('/services');
-  };
 
-  const handleExploreClick = () => {
-    navigate('/about');
-  };
 
   return (
       
       <body>
         <section>
-          <div className='container'>
+          <div className='container main'>
               <h2>Why Choose Us</h2>
               <p>Our furniture is modern and stylish, and will look great in any room. We offer a variety of services to help you find the perfect piece for your home.</p>
              <div className='why-us'>
@@ -60,32 +52,7 @@ const Home = () => {
           </div>
         </section>
 
-         {/* <section className='blogs'>
-                 <div className='container line'>
-                 <h2>Our Blogs</h2>
-                 <ul>
-                 <li>  <Link to={"/blog"}>View Full Posts</Link></li>
-                 </ul>
-                 </div>
-                 <div className='container content'>
-                   <div className='container blog-card'>
-                       <img src="\src\assets\blog-eco.jpg" alt="eco" />
-                       <h3>First Time Home Owner Ideas</h3>
-                       <span>by Nana Ama on Nov 18th, 2022</span>
-                   </div>
-                   <div className='container blog-card'>
-                       <img src="\src\assets\blog-sofa.jpg" alt="sofa" />
-                       <h3>First Time Home Owner Ideas</h3>
-                       <span>by Nana Ama on Nov 18th, 2022</span>
-                   </div>
-                   <div className='container blog-card'>
-                       <img src="\src\assets\blog-trends.jpg" alt="trends" />
-                       <h3>First Time Home Owner Ideas</h3>
-                      <span>by Nana Ama on Nov 18th, 2022</span>
-                   </div>
-                </div>
-                
-           </section> */}
+         
       </body>
       
       

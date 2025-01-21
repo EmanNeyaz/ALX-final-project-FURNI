@@ -47,10 +47,14 @@
 }
 .footer .footer-newsletter {
     display: flex;
-    flex-direction: ;
     align-items: center;
     justify-content: center;
     margin: 20px;
+    padding: 10px;
+}
+.footer .footer-newsletter h4{
+    margin-right: 10px;
+    
 }
 .footer .input-group {
     width: 350px;
