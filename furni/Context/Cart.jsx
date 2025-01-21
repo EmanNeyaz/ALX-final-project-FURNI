@@ -9,10 +9,9 @@ const Cart = () => {
   const handleBuyNow = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (!user) {
-      navigate('/login', { state: { from: '/cart' } });
+      navigate('/login', { state: { from: '/Payment' } });
     } else {
-      alert("Proceed to checkout");
-      // Add your checkout logic here
+      navigate('/payment');
     }
   };
 

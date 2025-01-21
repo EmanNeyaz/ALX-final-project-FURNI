@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer className="footer">
           <div className='footer-newsletter'>
-              <h2>Subscribe to our newsletter</h2>
+              <h4>Subscribe to our newsletter</h4>
                <div className='input-group'>
                   <input type='email' className='form-control' placeholder='Enter your email' />
                   <button type='submit' className='btn sub-btn'>Subscribe</button>

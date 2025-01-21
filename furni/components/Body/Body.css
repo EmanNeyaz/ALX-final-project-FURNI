@@ -1,3 +1,15 @@
+.main h2 {
+    font-size: 2rem;
+    
+    text-align: center;
+    margin: 20px 0;
+}
+.main p {
+    font-size: 1.2rem;
+    color: #000;
+    text-align: center;
+    margin: 20px 0;
+}
 .why-us {
     display: flex;
     flex-direction: row;
@@ -33,8 +45,9 @@
     .why-us-item p {
         font-size: 1rem;
         color: #000;
+        text-align: center;
     }
     .why-us-item span {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #000;
     }

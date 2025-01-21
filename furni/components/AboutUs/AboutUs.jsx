@@ -2,6 +2,7 @@ import React from 'react';
 
 import './AboutUs.css'; // Import the styles
 
+
 function AboutUs() {
   return (
     <div className="about-us-container">
@@ -17,7 +18,8 @@ function AboutUs() {
         </div>
         <div className="hero-image">
 
-          <img src="/react/src/assets/why-choose-us-img 1.svg" alt="" />
+          <img src="\src\assets\why-choose-us-img 1.svg" alt="" />
+
         </div>
       </section>
 

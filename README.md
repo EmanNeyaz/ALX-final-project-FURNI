@@ -21,6 +21,10 @@ This React application is an e-commerce platform for a furniture store.
     * Calculate total price and apply discounts (if applicable).
     * Proceed to checkout (implementation may vary depending on scope).
 
+ * **Payment Page:**
+     * This page handles secure online payments for our products and services.
+     * It uses industry-standard encryption to protect your sensitive information.
+
 * **Login/Sign up:**
     * User authentication for secure access.
     * User account management (profile, order history, etc.).
