@@ -1,0 +1,34 @@
+.home-container{
+    display: flex;
+    background-color: #385D50;
+}
+.home-container img{
+    width: 100%;
+    height: 100%;
+}
+.home {
+    background-color: #385D50;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+    .home h1 {
+        font-size: 2.5rem;
+        margin: 10px;
+        text-align: center;
+    }
+  .btn-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 10px;
+  }
+  .btn-group .btn {
+    border-radius: 50px ;
+    padding: 10px 40px;
+
+  }

@@ -1,9 +1,21 @@
 import React, { useContext } from 'react';
 import { CartContext } from './CartContext';
+import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {
   const { cart, removeFromCart, increaseQuantity, decreaseQuantity, getTotalPrice } = useContext(CartContext);
+  const navigate = useNavigate();
+  const handleBuyNow = () => {
+    const user = JSON.parse(localStorage.getItem("user"));
+    if (!user) {
+      navigate('/login', { state: { from: '/cart' } });
+    } else {
+      alert("Proceed to checkout");
+      // Add your checkout logic here
+    }
+  };
+
 
   return (
     <div className='cart container'>
@@ -37,6 +49,7 @@ const Cart = () => {
         </tbody>
       </table>
       <h3>Total: {getTotalPrice()} $</h3>
+      <button className='btn btn-success' onClick={handleBuyNow}>Buy Now</button>
     </div>
   );
 };

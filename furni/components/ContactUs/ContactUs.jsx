@@ -1,5 +1,6 @@
-import React from 'react';
-import './ContactUs.css';
+import React from 'react'
+import './ContactUs.css'; 
+
 
 function ContactUs() {
   const handleSubmit = (e) => {
@@ -30,6 +31,7 @@ function ContactUs() {
           <p>
             Have any questions or want to explore our furniture? Get in touch with us today!
           </p>
+
         </div>
       </section>
 

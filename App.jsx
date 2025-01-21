@@ -11,6 +11,11 @@ import Signup from './furni/components/login/Signup';
 import { CartProvider } from './furni/Context/CartContext';
 import ContactUs from './furni/components/ContactUs/ContactUs';
 import AboutUs from './furni/components/AboutUs/AboutUs';
+import BlogPage from './furni/components/Blog/BlogPage';
+import Services from './furni/Services/Services';
+import BedroomSets from './furni/Services/BedroomSets';
+import LivingRoom from './furni/Services/LivingRoom';
+import DiningRoom from './furni/Services/DiningRoom';
 
 function ErrorBoundary({ error }) {
   if (!error) {
@@ -40,8 +45,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'products',
-        element: <Products />
+        path: 'services',
+        element: <Services />
       },
       {
         path: 'cart',
@@ -62,7 +67,24 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <AboutUs />
-      }
+      },
+      {
+        path: 'blog',
+        element: <BlogPage />
+      },
+      {
+        path: 'bedroom-sets',
+        element: <BedroomSets />
+      },
+      {
+        path: 'dining-room',
+        element: <DiningRoom />
+      },
+      {
+        path: 'living-room',
+        element: <LivingRoom />
+      },
+
     ]
   }
 ]);

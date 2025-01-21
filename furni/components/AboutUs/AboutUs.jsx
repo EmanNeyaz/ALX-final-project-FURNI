@@ -1,5 +1,6 @@
 import React from 'react';
-import './AboutUs.css';
+
+import './AboutUs.css'; // Import the styles
 
 function AboutUs() {
   return (
@@ -15,7 +16,8 @@ function AboutUs() {
           </p>
         </div>
         <div className="hero-image">
-          <img src="/assets/hero-image.jpg" alt="Furniture Showcase" />
+
+          <img src="/react/src/assets/why-choose-us-img 1.svg" alt="" />
         </div>
       </section>
 

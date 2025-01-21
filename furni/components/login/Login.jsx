@@ -2,12 +2,14 @@ import { useState } from 'react';
 import React from "react";
 import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation  } from "react-router-dom";
 
 const Login = () => {
    const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();   
+  const navigate = useNavigate();  
+  const location = useLocation();
+  const from = location.state?.from || '/cart'; 
   const [action, setAction] = useState("");
   const handleLogin = (e) => {
     e.preventDefault();
@@ -15,7 +17,7 @@ const Login = () => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (user && user.username === username && user.password === password) {
       alert("Login successful!");
-      navigate("/"); // Redirect to home page or any other page
+      navigate(from); // Redirect to the previous page or home page
     } else {
       alert("Invalid username or password");
     }

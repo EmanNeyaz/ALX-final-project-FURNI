@@ -22,8 +22,12 @@ function Navbar() {
           <Link to={"/contact"}>Contact Us</Link>
         </li>
         <li>
-          <Link to={"/products"}>Products</Link>
+          <Link to={"/services"}>Services</Link>
         </li>
+        <li>
+          <Link to={"/blog"}>Blogs</Link>
+        </li>
+
         </ul>
         <ul>
           <li className="cart">
