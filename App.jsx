@@ -5,7 +5,7 @@ import Home from './furni/components/Home';
 import Products from './furni/Products/Products';
 import Navbar from './furni/components/Navbar';
 import Cart from './furni/Context/Cart';
-import PropTypes from 'prop-types';
+import PropTypes, { element } from 'prop-types';
 import Login from './furni/components/login/Login';
 import Signup from './furni/components/login/Signup';
 import { CartProvider } from './furni/Context/CartContext';
@@ -16,6 +16,7 @@ import Services from './furni/Services/Services';
 import BedroomSets from './furni/Services/BedroomSets';
 import LivingRoom from './furni/Services/LivingRoom';
 import DiningRoom from './furni/Services/DiningRoom';
+import Payment from './furni/components/Payment/Payment';
 
 function ErrorBoundary({ error }) {
   if (!error) {
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />
+        
       },
       {
         path: 'services',
@@ -84,6 +86,10 @@ const router = createBrowserRouter([
         path: 'living-room',
         element: <LivingRoom />
       },
+      {
+        path: 'payment',
+        element: <Payment />
+      }
 
     ]
   }
