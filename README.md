@@ -62,3 +62,18 @@ This React application is an e-commerce platform for a furniture store.
     * **[Routing]:** ( React Router)
     * **[API client]:** (   )
 
+* **how to run our website on your device**
+
+ * 1 *Clone the repository:*
+ ```bash
+   git clone <"https://github.com/EmanNeyaz/ALX-final-project-FURNI.git">
+
+ * 2 *Navigate to the project directory*
+ ```bash
+     cd react
+ * 3 *Install dependencies:*
+ ```bash
+     npm install    
+ * 4  *Start the development server:* 
+ ```bash
+     npm start 
